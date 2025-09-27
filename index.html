@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random File Redirect</title>
+  <script>
+    // List of your files
+    const files = [
+      "https://drive.google.com/file/d/1QiJVPLQqtmAPjEiRRYtR8wqD_WoL4-pX/view?usp=drive_link",
+      "https://drive.google.com/file/d/1Kt80F91qjH0iYxh17_5TRsrO4ggJ3xTJ/view?usp=drive_link",
+      "https://drive.google.com/file/d/11ked-Tx2T5oK9bL_XNvpjv2nOodzvM6J/view?usp=drive_link"
+    ];
+
+    // Pick random file
+    const choice = files[Math.floor(Math.random() * files.length)];
+
+    // Redirect immediately
+    window.location.href = choice;
+  </script>
+</head>
+<body>
+  <p>Redirecting you...</p>
+</body>
+</html>
